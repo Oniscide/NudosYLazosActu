@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Enlaza tu archivo CSS principal -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Enlaza Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <!-- Enlaza Bootstrap CSS map -->
+  </header>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contacto - Artículos de Crochet</title>
+    <style>
+      label {
+        display: block;
+        float: left;
+        width: 120px;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contacto</h1>
+    <form id="contactoForm">
+      <div>
+        <label for="nombreContacto">Nombre</label>
+        <input type="text" id="nombreContacto" required />
+      </div>
+      <div>
+        <label for="correoContacto">Correo Electrónico</label>
+        <input type="email" id="correoContacto" required />
+      </div>
+      <div>
+        <label for="mensajeContacto">Mensaje</label>
+        <textarea id="mensajeContacto" required></textarea>
+      </div>
+      <input type="submit" value="Enviar" />
+    </form>
+    <div id="errorContacto" class="error"></div>
+
+    <script src="contacto.js"></script>
+  </body>
+</html>

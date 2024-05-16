@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Enlaza tu archivo CSS principal -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Enlaza Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <!-- Enlaza Bootstrap CSS map -->
+  </header>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pedidos Personalizados - Artículos de Crochet</title>
+    <style>
+      label {
+        display: block;
+        float: left;
+        width: 120px;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pedidos Personalizados</h1>
+    <form id="pedidoForm">
+      <div>
+        <label for="nombrePedido">Nombre</label>
+        <input type="text" id="nombrePedido" required />
+      </div>
+      <div>
+        <label for="correoPedido">Correo Electrónico</label>
+        <input type="email" id="correoPedido" required />
+      </div>
+      <div>
+        <label for="descripcionPedido">Descripción del Pedido</label>
+        <textarea id="descripcionPedido" required></textarea>
+      </div>
+      <input type="submit" value="Enviar" />
+    </form>
+    <div id="errorPedido" class="error"></div>
+
+    <script src="pedido.js"></script>
+  </body>
+</html>

@@ -1,0 +1,257 @@
+/* estilos.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: pink;
+}
+
+header {
+  display: flex;
+  height: 70px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+  padding: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+nav a:hover {
+  color: pink;
+}
+
+.title-style {
+  display: flex;
+  background-color: white;
+}
+
+.title-style img {
+  height: 50px;
+}
+
+.margen {
+  padding: 60px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+h5,
+p,
+a,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+/* PRINCIPAL */
+
+/* Carrusel */
+
+/* Estilos personalizados para el carrusel */
+#carouselExampleCaptions {
+  max-width: 800px; /* Ajusta el ancho máximo del carrusel */
+  margin: auto; /* Centra el carrusel en la página */
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Ajusta la altura de la imagen automáticamente para mantener la proporción */
+}
+
+.carousel-caption {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semi-transparente para el texto del carrusel */
+  border-radius: 5px; /* Bordes redondeados para el contenedor de la descripción */
+  bottom: 20px; /* Ajusta la posición vertical de la descripción */
+  left: 20px; /* Ajusta la posición horizontal de la descripción */
+  right: 20px; /* Ajusta la posición horizontal de la descripción */
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: white; /* Color del texto del carrusel */
+}
+
+/* footer */
+.footer-back {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* QUIENES */
+
+.quienes-somos-section {
+  padding: 50px 0; /* Aespacio */
+  text-align: center; /* Centrar el contenido */
+}
+
+.container {
+  max-width: 800px; /* Ancho para el contenido */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+.col-md-6 {
+  text-align: center; /* Alinear el contenido del contenedor al centro */
+}
+
+.img-fluid {
+  display: block; /* Asegurar que la imagen sea tratada como un bloque */
+  margin-left: auto; /* Establecer el margen izquierdo a auto para centrar horizontalmente */
+  margin-right: auto; /* Establecer el margen derecho a auto para centrar horizontalmente */
+  max-width: 100%; /* Hacer que la imagen sea sensible al tamaño */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin-bottom: 20px;
+}
+
+.video-container iframe {
+  position: absolute; /* Establecer la posición absoluta para el iframe del video */
+  top: 0;
+  left: 0;
+  width: 100%; /* Asegurar que el video ocupe todo el ancho disponible */
+  height: 100%; /* Asegurar que el video ocupe todo el alto disponible */
+}
+
+/* Galeria */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: #6a6a6a;
+  margin-top: 100px;
+  font-weight: 100;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.container .card {
+  width: 280px;
+  height: 540px;
+  border-radius: 8px;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  background-color: white;
+}
+
+.container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: o 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  width: 280px;
+  height: 350px;
+}
+
+.container .card h4 {
+  font-weight: 600;
+}
+
+.container .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* estilos formularios */
+form {
+  margin: 20px auto; /* Margen y centrado */
+  max-width: 600px; /* Ancho formulario */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px; /* Espacio */
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos mensajes de validación  */
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 5px;
+}
